@@ -11,4 +11,17 @@ def remove_elements(lista):
     Returns:
         La lista después de remover los elementos indicados
     """
-    pass  # Reemplazar con tu implementación
+    if len(lista)==0:
+        return lista
+    elif len(lista)<5:
+        del lista[0]
+        return lista
+    elif len(lista)<6:
+        del lista[0]
+        del lista[3]
+        return lista
+    else:
+        del lista[0]
+        del lista[3]
+        del lista[3]
+        return lista
